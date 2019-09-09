@@ -1,0 +1,31 @@
+Explore this app: https://github.com/marcellis/demorecyclerview (in Java) and explain why recyclerview is called “recycler”
+It "recycles" views once they get out of the screen. So when items start going out of the screen
+you can scroll to see the other items.
+
+What is the difference of a staggered grid comparing to a normal grid?
+In a normal grid each grid has the same size. In a staggered grid each grid can vary in
+size.
+
+What is the purpose of logcat?
+Logcat is a tool that dumps a log of system messages. If you open the logcat tab in
+android studio you can then for example see stacktraces from errors.
+
+What kind of gestures are available?
+
+
+What was the predecessor of the recyclerview?
+A list view. A lot of people refer to a recyclerview as being "the better version of a 
+list view"
+
+What is the difference between a Toast and Snackbar ?
+With Snackbar you can give the user the opportunity to take action.
+For example if the user deletes a Todo from the list you can provide an Undo option in the Snackbar message.
+With toasts you just display a message.
+
+
+What is the purpose of the existence of “optionals” in the Kotlin language?
+It tries to get rid of NullPointExceptions. It allows variables to be null. 
+In the Reminder project we also use optionals
+for example here:
+etReminder.text?.clear()
+if etReminder.text is null then the clear() will not be called.
