@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Swipe Quiz</string>
+    <string name="instruction_header">Quiz instructions</string>
+    <string name="instruction">Swipe left for true, swipe right for false. Click on th equestion for the answer.\nA \'val\' and \'var\' are the same</string>
+</resources>
