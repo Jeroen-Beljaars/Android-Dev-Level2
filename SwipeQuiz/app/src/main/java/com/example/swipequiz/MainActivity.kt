@@ -27,10 +27,10 @@ class MainActivity : AppCompatActivity() {
         rvQuestions.addItemDecoration(DividerItemDecoration(this@MainActivity, DividerItemDecoration.VERTICAL))
         createItemTouchHelper().attachToRecyclerView(rvQuestions)
 
-        questions.add(Question("Lorem ipsum", true))
-        questions.add(Question("Dolor amet", false))
-        questions.add(Question("Test lorem", true))
-        questions.add(Question("A == A", true))
+        questions.add(Question("A 'val' and 'var' are the same.", false))
+        questions.add(Question("Mobile application Development grants 12 ECTS.", true))
+        questions.add(Question("A Unit in Kotlin corresponds to a void in Java.", false))
+        questions.add(Question("In Kotlin 'when' replaces the 'switch' operator in Java.", true))
         questionAdapter.notifyDataSetChanged()
     }
 
