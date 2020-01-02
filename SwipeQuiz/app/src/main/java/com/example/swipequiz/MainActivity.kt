@@ -7,6 +7,7 @@ import androidx.recyclerview.widget.ItemTouchHelper
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.google.android.material.snackbar.Snackbar
+import com.google.android.material.snackbar.Snackbar.make
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -59,9 +60,9 @@ class MainActivity : AppCompatActivity() {
                 val position = viewHolder.adapterPosition
                 val currentQuestion = questions[position]
                 if (currentQuestion.answer == (direction == ItemTouchHelper.RIGHT)){
-                    Snackbar.make(tvInstruction, "Your answer is correct!", Snackbar.LENGTH_SHORT).show()
+                    make(tvInstruction, "Your answer is correct!", Snackbar.LENGTH_SHORT).show()
                 } else{
-                    Snackbar.make(tvInstruction, "Your answer is incorrect!", Snackbar.LENGTH_SHORT).show()
+                    make(tvInstruction, "Your answer is incorrect!", Snackbar.LENGTH_SHORT).show()
                 }
 
                 questionAdapter.notifyDataSetChanged()
